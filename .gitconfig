@@ -1,0 +1,11 @@
+[core]
+	autocrlf = input
+	editor = vim
+	excludesfile = ~/.gitignore
+[user]
+	email = {{your@email.com}}
+	name = {{Your Name}}
+[color]
+	ui = auto
+[alias]
+	forget = "! /usr/local/bin/git fetch -p && /usr/local/bin/git branch -vv | awk '/: gone]/{print $1}' | xargs /usr/local/bin/git branch -D"
